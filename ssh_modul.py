@@ -13,7 +13,6 @@ port_ssh_vm = 2222
 user_ssh = "dimasubuntu" 
 pass_ssh = "dimasubuntu" 
 
-  
 def cek_ssh(): 
     try: 
         client = paramiko.SSHClient() 

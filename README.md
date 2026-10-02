@@ -3,8 +3,8 @@
 Project Python modular untuk otomatisasi kantor cabang virtual: identitas,
 akses SSH, monitoring SNMP, pembuatan pesan NETCONF, dan analisis telemetry.
 
-- Nama : <Nama Lengkap Kamu>
-- NIM : <NIM Kamu>
+- Nama : Dimas Firjatullah Islamay
+- NIM : 2409106057
 - Mata kuliah: Jaringan Komputer Lanjut, Kelas B 2024
 
 ## Struktur Folder
@@ -45,7 +45,7 @@ NIM_NamaLengkap_UTS_JKL/
 ```
 
 Jika VM/perangkat tidak dapat dihubungi, modul SSH dan SNMP menangani
-kegagalan dengan try/except sehingga program tetap berjalan sampai laporan akhir.
+kegagalan dengan try/except sehingga program tetap berjalan sampai laporan akhir
 
 ## Ringkasan Personalisasi
 
