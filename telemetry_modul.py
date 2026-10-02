@@ -21,7 +21,7 @@ data_telemetry = {
     f"sampel_{i + 1}": {
         "sensor_path": "huawei-devm:devm/cpuInfos/cpuInfo",
         "position": f"{i}",
-        "cpuUsage": _hitung_cpu(d),  # in-uti (%)
+        "cpuUsage": _hitung_cpu(d),
     }
     for i, d in enumerate(digit_nim)
 }

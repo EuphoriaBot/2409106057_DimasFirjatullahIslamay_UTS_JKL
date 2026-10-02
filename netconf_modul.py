@@ -16,7 +16,6 @@ VLAN_ID = int(kode_cabang)
 
 
 def buat_pesan_netconf():
-    """Membangun string XML <rpc><edit-config> untuk membuat VLAN."""
 
     rpc = ET.Element("rpc", {
         "xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0",

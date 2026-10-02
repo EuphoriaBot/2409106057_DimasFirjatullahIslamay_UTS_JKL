@@ -8,6 +8,8 @@ Tujuan      : Mengintegrasikan modul identitas, ssh_modul, snmp_modul,
 Pembuat     : Dimas Firjatullah Islamay - 2409106057
 """
 
+import asyncio
+import inspect
 import identitas
 import ssh_modul
 import snmp_modul
@@ -55,13 +57,15 @@ class LaporanCabang:
 
 
 def jalankan(fungsi, *args):
-    """Menjalankan function; kegagalan tidak menghentikan program."""
     try:
-        hasil = fungsi(*args)
+        if inspect.iscoroutinefunction(fungsi):
+            hasil = asyncio.run(fungsi(*args))
+        else:
+            hasil = fungsi(*args)
         return hasil if hasil is not None else "(selesai, lihat output di atas)"
     except Exception as e:
         return f"GAGAL: {e}"
-
+    
 
 def main():
     print("--- Identitas ---")
